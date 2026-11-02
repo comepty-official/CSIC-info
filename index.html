@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSIC — Comepty Super Intelligence Connection</title>
+  <meta name="description"
+    content="CSIC is an autonomous AI assistant for Windows. See what it is, read the risks, download it, and send feedback." />
+
+  <!-- Tab Icon (Favicon) -->
+
+  <!-- Tab Icon (Favicon) -->
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png?v=3">
+
+  <!-- Open Graph (Discord, WhatsApp, etc.) -->
+  <meta property="og:title" content="CSIC — Comepty Super Intelligence Connection" />
+  <meta property="og:description"
+    content="CSIC is an autonomous AI assistant for Windows. 12,000+ installs, rated 4.2." />
+  <meta property="og:image" content="https://comepty-official.github.io/CSIC/assets/images/preview.png" />
+  <meta property="og:url" content="https://comepty-official.github.io/CSIC/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CSIC — Comepty Super Intelligence Connection" />
+  <meta name="twitter:description"
+    content="CSIC is an autonomous AI assistant for Windows. 12,000+ installs, rated 4.2." />
+  <meta name="twitter:image" content="https://comepty-official.github.io/CSIC/assets/images/preview.png" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+
+  <!-- ================= LOGO SYMBOL ================= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="csic-mark" viewBox="0 0 64 64">
+      <rect x="4" y="4" width="56" height="56" rx="8" fill="none" stroke="currentColor" stroke-width="4" />
+      <line x1="4" y1="20" x2="60" y2="20" stroke="currentColor" stroke-width="4" />
+      <circle cx="12" cy="12" r="2" fill="currentColor" />
+      <circle cx="20" cy="12" r="2" fill="currentColor" />
+      <circle cx="28" cy="12" r="2" fill="currentColor" />
+      <path d="M22 32l-6 8 6 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path d="M42 32l6 8-6 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <line x1="34" y1="30" x2="30" y2="44" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+    </symbol>
+  </svg>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <svg class="mark">
+          <use href="#csic-mark" />
+        </svg>
+        <span>CSIC</span>
+      </a>
+      <nav>
+        <a href="#apps">Apps</a>
+        <a href="#about">What is CSIC</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#risk">Risks</a>
+        <a href="#download">Download</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+      <div class="top-actions">
+        <button class="btn ghost small" id="shareBtn" type="button">Share</button>
+        <a class="btn primary small" href="#download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-logo">
+        <svg class="mark">
+          <use href="#csic-mark" />
+        </svg>
+        <h1>CSIC</h1>
+      </div>
+      <p class="tagline">
+        <strong>Comepty Super Intelligence Connection</strong> — an autonomous AI that builds,
+        fixes and runs things on your Windows PC while you just watch.
+      </p>
+
+      <div class="searchbar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </svg>
+        <input id="appSearch" type="text" placeholder="Search CSIC apps" autocomplete="off" />
+      </div>
+
+      <div class="stats">
+        <span class="pill">
+          <span class="stars"><span class="base">★★★★★</span><span class="fill" style="width:84%">★★★★★</span></span>
+          4.2 out of 5
+        </span>
+        <span class="pill">12,000+ installs</span>
+        <span class="pill win">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 5.5 10.5 4.4v7.1H3zM11.5 4.2 21 3v8.5h-9.5zM3 12.5h7.5v7.1L3 18.5zM11.5 12.5H21V21l-9.5-1.3z" />
+          </svg>
+          Windows only
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= APPS ================= -->
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Apps</h2>
+        <p>Everything CSIC can do, in one place.</p>
+      </div>
+
+      <div class="apps" id="appGrid">
+        <!-- To replace an icon, just drop a PNG into assets/icons/ with the matching name -->
+        <div class="app" data-name="csic chat ai assistant">
+          <div class="icon" style="background:linear-gradient(135deg,#4f46e5,#818cf8)">
+            <img src="assets/icons/chat.png" alt="Chat"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='💬';">
+          </div>
+          <div class="name">CSIC Chat</div>
+        </div>
+        <div class="app" data-name="csic code developer">
+          <div class="icon" style="background:linear-gradient(135deg,#0f172a,#334155)">
+            <img src="assets/icons/code.png" alt="Code"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='⌨️';">
+          </div>
+          <div class="name">CSIC Code</div>
+        </div>
+        <div class="app" data-name="csic studio design build">
+          <div class="icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)">
+            <img src="assets/icons/studio.png" alt="Studio"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='🎨';">
+          </div>
+          <div class="name">CSIC Studio</div>
+        </div>
+        <div class="app" data-name="csic voice speak microphone">
+          <div class="icon" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">
+            <img src="assets/icons/voice.png" alt="Voice"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='🎙️';">
+          </div>
+          <div class="name">CSIC Voice</div>
+        </div>
+        <div class="app" data-name="csic files explorer folder">
+          <div class="icon" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8)">
+            <img src="assets/icons/files.png" alt="Files"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='📁';">
+          </div>
+          <div class="name">CSIC Files</div>
+        </div>
+        <div class="app" data-name="csic notes write memo">
+          <div class="icon" style="background:linear-gradient(135deg,#10b981,#34d399)">
+            <img src="assets/icons/notes.png" alt="Notes"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='📝';">
+          </div>
+          <div class="name">CSIC Notes</div>
+        </div>
+        <div class="app" data-name="csic browse web browser">
+          <div class="icon" style="background:linear-gradient(135deg,#6366f1,#22d3ee)">
+            <img src="assets/icons/browse.png" alt="Browse"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='🌐';">
+          </div>
+          <div class="name">CSIC Browse</div>
+        </div>
+        <div class="app" data-name="csic music player audio">
+          <div class="icon" style="background:linear-gradient(135deg,#ef4444,#f97316)">
+            <img src="assets/icons/music.png" alt="Music"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='🎵';">
+          </div>
+          <div class="name">CSIC Music</div>
+        </div>
+        <div class="app" data-name="csic camera photo capture">
+          <div class="icon" style="background:linear-gradient(135deg,#8b5cf6,#c084fc)">
+            <img src="assets/icons/camera.png" alt="Camera"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='📷';">
+          </div>
+          <div class="name">CSIC Camera</div>
+        </div>
+        <div class="app" data-name="csic calc math numbers">
+          <div class="icon" style="background:linear-gradient(135deg,#0891b2,#22d3ee)">
+            <img src="assets/icons/calc.png" alt="Calc"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='🧮';">
+          </div>
+          <div class="name">CSIC Calc</div>
+        </div>
+        <div class="app" data-name="csic mail email inbox">
+          <div class="icon" style="background:linear-gradient(135deg,#2563eb,#60a5fa)">
+            <img src="assets/icons/mail.png" alt="Mail"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='✉️';">
+          </div>
+          <div class="name">CSIC Mail</div>
+        </div>
+        <div class="app" data-name="csic terminal command shell">
+          <div class="icon" style="background:linear-gradient(135deg,#111827,#4b5563)">
+            <img src="assets/icons/terminal.png" alt="Terminal"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='⌘';">
+          </div>
+          <div class="name">CSIC Terminal</div>
+        </div>
+      </div>
+      <div class="empty" id="emptyMsg">No apps match that search.</div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about"
+    style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What is CSIC?</h2>
+        <p>Not a chatbot. A doer.</p>
+      </div>
+      <div class="grid-2" style="margin-bottom:20px">
+        <div class="card">
+          <h3 style="margin:0 0 10px;font-size:19px">An AI that actually builds things</h3>
+          <p style="margin:0;color:var(--muted)">
+            CSIC — <strong>Comepty Super Intelligence Connection</strong> — is an autonomous assistant
+            that lives on your Windows computer. You tell it what you want in plain English and it
+            writes the files, installs what's needed, and runs it for you. Websites, games, tools,
+            scripts. You watch, it works.
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 10px;font-size:19px">Made for people who don't code</h3>
+          <p style="margin:0;color:var(--muted)">
+            You never touch a terminal, never install a thing, never read an error message.
+            CSIC handles the technical side and explains what it did in normal words.
+            If something breaks, it fixes it and tells you plainly.
+          </p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="mini">
+          <h3>⚡ Does the work</h3>
+          <p>Runs commands, creates files, starts servers — all on its own.</p>
+        </div>
+        <div class="mini">
+          <h3>🪟 Windows first</h3>
+          <p>Built and tested for Windows 10 and 11. Other systems come later.</p>
+        </div>
+        <div class="mini">
+          <h3>🔒 Stays on your PC</h3>
+          <p>Your projects are saved in folders on your own machine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>See CSIC in Action</h2>
+        <p>Real screenshots from real users building things.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item"><img src="assets/screenshots/screen1.png" alt="CSIC Screenshot 1"></div>
+        <div class="gallery-item"><img src="assets/screenshots/screen2.png" alt="CSIC Screenshot 2"></div>
+        <div class="gallery-item"><img src="assets/screenshots/screen3.png" alt="CSIC Screenshot 3"></div>
+        <div class="gallery-item"><img src="assets/screenshots/screen4.png" alt="CSIC Screenshot 4"></div>
+        <div class="gallery-item"><img src="assets/screenshots/screen5.png" alt="CSIC Screenshot 5"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RISK ================= -->
+  <section class="section" id="risk"
+    style="background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="card risk">
+        <h2 style="margin:0;font-size:30px;letter-spacing:-.5px">The risks — read this first</h2>
+        <p style="margin:8px 0 0;color:#7a5049;max-width:720px">
+          CSIC can run commands and change files on your computer. That power is real, and you should
+          know exactly what it means before you install it.
+        </p>
+        <ul class="risk-list">
+          <li>
+            <span class="dot">!</span>
+            <div><b>It can change your computer</b>
+              <span>CSIC creates, edits and deletes files, and runs terminal commands. Always read what it says it's
+                about to do before saying yes.</span>
+            </div>
+          </li>
+          <li>
+            <span class="dot">!</span>
+            <div><b>AI can be confidently wrong</b>
+              <span>It can write code that looks right but isn't, or misunderstand your request. Check important results
+                yourself.</span>
+            </div>
+          </li>
+          <li>
+            <span class="dot">!</span>
+            <div><b>Only run it on a machine you own</b>
+              <span>Do not install CSIC on a work, school or shared computer without permission from whoever manages
+                it.</span>
+            </div>
+          </li>
+          <li>
+            <span class="dot">!</span>
+            <div><b>Back up anything you care about</b>
+              <span>Before letting CSIC work inside an important folder, make a copy somewhere safe.</span>
+            </div>
+          </li>
+          <li>
+            <span class="dot">!</span>
+            <div><b>It is not a replacement for your own judgement</b>
+              <span>CSIC follows your instructions. It is not responsible for what you ask it to do, and it won't stop
+                you from asking for something unwise.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOAD ================= -->
+  <section class="section" id="download">
+    <div class="wrap">
+      <div class="download-card">
+        <div>
+          <span class="win-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3 5.5 10.5 4.4v7.1H3zM11.5 4.2 21 3v8.5h-9.5zM3 12.5h7.5v7.1L3 18.5zM11.5 12.5H21V21l-9.5-1.3z" />
+            </svg>
+            Windows 10 / 11 · 64-bit
+          </span>
+          <h2>Get CSIC for Windows</h2>
+          <p>One installer. No setup steps. 12,000+ people already installed it and rated it 4.2 out of 5.</p>
+          <a class="btn primary" id="downloadBtn"
+            href="https://github.com/comepty-official/CSIC/releases/download/v0.1.0/CSIC-App.zip">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v12" />
+              <path d="m7 11 5 5 5-5" />
+              <path d="M4 21h16" />
+            </svg>
+            Download for Windows
+          </a>
+          <p style="margin:16px 0 0;font-size:13.5px;color:#a9acd8">Free · Windows only for now · More platforms later
+          </p>
+        </div>
+        <div class="dl-art">
+          <svg class="mark">
+            <use href="#csic-mark" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEEDBACK ================= -->
+  <section class="section" id="feedback" style="background:var(--soft);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="card feedback">
+        <div>
+          <h2>Send feedback</h2>
+          <p>
+            Found a bug? Got an idea? Want to show off something you built? Hop into the CSIC
+            community on Discord and tell us directly. Every bit of feedback shapes what gets
+            built next.
+          </p>
+          <a class="btn discord" id="discordBtn" href="https://discord.gg/fQ7YeNVWF" target="_blank" rel="noopener">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.3 4.5A17 17 0 0 0 16 3.1l-.2.5a13 13 0 0 1 3.6 1.8 12 12 0 0 0-10.8 0A13 13 0 0 1 12.2 3.6L12 3.1a17 17 0 0 0-4.3 1.4C4.9 8.9 4.2 13.2 4.5 17.5a17 17 0 0 0 5.2 2.6l1.1-1.8a11 11 0 0 1-1.8-.9l.4-.3a12.2 12.2 0 0 0 10.4 0l.4.3c-.6.4-1.2.7-1.8.9l1.1 1.8a17 17 0 0 0 5.2-2.6c.4-5-.7-9.2-4.4-13zM9.7 14.9c-1 0-1.9-.9-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1zm4.6 0c-1 0-1.9-.9-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.9 2.1-1.9 2.1z" />
+            </svg>
+            Join the CSIC Discord
+          </a>
+        </div>
+        <div class="mini" style="background:#fff">
+          <h3>What to send us</h3>
+          <p style="margin-bottom:10px">Anything at all — we read it all.</p>
+          <p>🐞 Bugs and crashes<br>
+            💡 Feature ideas<br>
+            ⭐ Your rating (we're at 4.2)<br>
+            🖼️ Screenshots of what you built</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOTTOM IMAGE ================= -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="img-slot" id="imgSlot">
+        <!-- Drop your preview image into assets/images/preview.png to make it show up here -->
+        <img id="bottomImage" src="assets/images/preview.png" alt="CSIC Preview" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="wrap">
+      <div class="fl">
+        <span>© <span id="year">2025</span> CSIC — Comepty Super Intelligence Connection</span>
+      </div>
+      <div class="fl">
+        <a href="#about">What is CSIC</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#risk">Risks</a>
+        <a href="#download">Download</a>
+        <a href="#feedback">Feedback</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
